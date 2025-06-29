@@ -682,10 +682,12 @@ async def criar_usuario(usuario: UsuarioCreate):
 
                 {/* Botões */}
                 <div className="flex space-x-2">
-                  <Button className="flex-1 bg-green-600 hover:bg-green-700">
-                    <Play className="h-4 w-4 mr-2" />
-                    Começar Projeto
-                  </Button>
+                  <Link href={`/projetos/${project.id}`} className="flex-1">
+                    <Button className="w-full bg-green-600 hover:bg-green-700">
+                      <Play className="h-4 w-4 mr-2" />
+                      Ver Tutorial Completo
+                    </Button>
+                  </Link>
                   <Button
                     variant="outline"
                     size="sm"
